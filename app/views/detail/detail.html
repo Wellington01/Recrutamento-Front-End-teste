@@ -1,0 +1,32 @@
+<div ng-controller="DetailController" ng-init="vm.getSerieDetail()" class="ng-cloack">
+	<md-content>
+		<div layout="row" layout-sm="column">
+			<div flex class="space">
+				<img src="imgs/imgSerie.jpeg" width="100%" height="70%" />
+			</div>
+			<div flex="75" class="space">
+				<div class="serieTitle">
+					<h1>{{vm.serie.title}}</h1>
+				</div>
+				<div class="serieRating">
+					<a href="">
+						<i class="material-icons">star_border</i>
+						<span style="font-size:18px" class="rating">{{vm.serie.rating | number:2}}</span>
+					</a>
+				</div>
+				<div class="corpo">
+
+					<b>Empresa: </b><span>{{vm.serie.network}}</span>
+					<br>
+					<b>Site oficial: </b> <a href="{{vm.serie.homepage}}">{{vm.serie.homepage}}</a>
+					<br>
+					<b>Número Ep. </b> <span>{{vm.serie.aired_episodes}}</span>
+
+					<p class="text-primary">
+						Resumo: {{vm.serie.overview}}
+					</p>
+				</div>
+			</div>
+		</div>
+	</md-content>
+</div>

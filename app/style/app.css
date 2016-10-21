@@ -1,0 +1,78 @@
+a {
+    text-decoration: none;
+    color: #515151;
+}
+
+a:before {
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+   text-align:center;
+}
+
+.techs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap
+}
+
+.techs md-card {
+    width: 30%
+}
+
+.techs md-card img.pull-right {
+    float: left;
+    width: 100%
+}
+
+.serieTitle {
+    float: left;
+    width: 60%;
+}
+
+.serieTitle h1 {
+    margin: 0px;
+}
+
+.serieRating {
+    float: right;
+    width: 40%;
+}
+
+.serieRating .material-icons {
+    font-size: 45px;
+    color: coral;
+}
+
+.logo {
+    float: left;
+}
+
+.logoTitle h1 {
+    margin: 0px;
+}
+
+.logoTitle {
+    float: right;
+    padding: 8px;
+}
+
+.logo .material-icons {
+    font-size: 45px;
+    color: coral;
+}
+
+.corpo{
+    margin-top: 95x;
+}
+
+.space {
+    margin: 10px;
+}
+
+.rating{
+    font-size: 25px;
+    vertical-align: super;
+}

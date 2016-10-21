@@ -1,0 +1,17 @@
+<div ng-controller="HomeController" layout="vertical" layout-fill ng-init="vm.getMorePopulateSeries()">
+	<md-content>
+		<div class="techs" layout-align="center" ng-if="vm.series.length > 0">
+			<md-card ng-repeat="serie in vm.series">
+				<img class="pull-right" src="imgs/imgSerie.jpeg" alt="{{ serie.title }}" >
+				<md-card-content>
+					<a href="#/detail/{{serie.ids.slug}}">
+						<h1 class="md-title">{{ serie.title }}</h1>
+					</a>
+				</md-card-content>
+			</md-card>
+		</div>
+		<div layout="row" layout-align="center center">
+			<md-button flex="30" layout-align="center" class="md-raised md-primary" ng-click="vm.getMorePopulateSeries(9)">Carregar mais</md-button>
+		</div>
+	</md-content>
+</div>
